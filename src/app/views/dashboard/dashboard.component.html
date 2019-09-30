@@ -1,0 +1,27 @@
+<div>
+  <button type="button" class="btn btn-primary active mt-3" (click)='getProductsData()'>Products List</button>
+</div>
+
+
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Organization</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of datas">
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.organization}}</td>
+        <td>{{data.designation}}</td>
+        <td>{{data.experience}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
