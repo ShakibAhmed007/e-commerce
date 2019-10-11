@@ -1,0 +1,116 @@
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+<div class="container">
+  <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+
+      <form [formGroup]="productEntryForm" (ngSubmit)="onSubmit()">
+        <div class="form-group input-group">
+          
+          
+          <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+              <input name="productName" class="form-control" placeholder="Product Name" type="text" formControlName="productName">
+          </div> 
+
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+              <input name="productPrice" class="form-control" placeholder="Product Price" type="text" formControlName="productPrice">
+          </div> 
+
+        
+          
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+              <input name="productWeight" class="form-control" placeholder="Product Weight" type="text" formControlName="productWeight">
+          </div> 
+
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+              <input name="productDescription" class="form-control" placeholder="Product Description" type="text" formControlName="productDescription">
+          </div> 
+
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+              <input name="productViewerDescription" class="form-control" placeholder="Product Viewer Description" type="text" formControlName="productViewerDescription">
+          </div> 
+
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+              <input name="productImage" class="form-control" placeholder="Product Image" type="text" formControlName="productImage">
+          </div>
+
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+          </div>
+          <select class="form-control" formControlName="productCategoryId">
+            <option value="1"> Select Category</option>
+            <option value="Designer">T-Shirt</option>
+            <option value="Manager">Shirt</option>
+            <option value="Accaunting">Jeans</option>
+          </select>
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+              <input name="productStock" class="form-control" placeholder="Product Stock" type="number" formControlName="productStock">
+          </div>
+
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+              <input name="productStock" class="form-control" placeholder="Product Stock" type="number" formControlName="productStock">
+          </div>
+
+          <div class="form-group">
+            
+            <label for="happy" class="control-label text-right"> Sure? </label>
+            <div class="col-sm-7 col-md-7">
+              <div class="input-group">
+                
+                <div id="radioBtn" class="btn-group">
+                  <a class="btn btn-primary btn-sm active" data-toggle="happy" data-title="Y">YES</a>
+                  <a class="btn btn-primary btn-sm notActive" data-toggle="happy" data-title="N">NO</a>
+                </div>
+                <input type="hidden" name="happy" id="happy">
+              </div>
+
+            </div>
+          </div>
+        </div>                                                                                       
+      </form>
+    </article>
+  </div>
+</div>
+
+
+

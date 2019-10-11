@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { FormGroup,FormControl, FormControlName } from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms'
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -42,6 +44,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductEntryComponent } from './views/product-entry/product-entry.component';
 
 @NgModule({
   imports: [
@@ -58,7 +61,8 @@ import { HttpClientModule } from '@angular/common/http';
     TabsModule.forRoot(),
     ChartsModule,
     FormsModule, 
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
@@ -66,7 +70,8 @@ import { HttpClientModule } from '@angular/common/http';
     P404Component,
     P500Component,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductEntryComponent
   ],
   providers: [{
     provide: LocationStrategy,

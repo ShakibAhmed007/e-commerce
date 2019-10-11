@@ -12,7 +12,6 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
   imports: [
     FormsModule,
     DashboardRoutingModule,
-    ChartsModule,
     BsDropdownModule,
     ButtonsModule.forRoot(),
     CommonModule
