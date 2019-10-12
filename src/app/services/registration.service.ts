@@ -14,7 +14,7 @@ export class RegistrationService {
     ) { }
 
   saveUserRegistrationData(registrationBean:RegistrationBean){
-    let url = 'http://localhost:9080/get-products-list';
+    let url = 'http://localhost:9080/register-company';
     
     // creating json data
     let registrationJsonData = {
@@ -27,8 +27,8 @@ export class RegistrationService {
       'Content-Type': 'application/json'
     });
 
-
     console.log(JSON.stringify(registrationJsonData));
+    this.httpClient.post(url,JSON.stringify(registrationJsonData));
 
 
   // calling rest api
